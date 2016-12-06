@@ -86,7 +86,7 @@ namespace Project_12_1
         {
             string num = Convert.ToString(Inside.Text);
             string back = num.Remove(num.Length - 1);
-            Inside.Text = Convert.ToString(back); //comment
+            Inside.Text = Convert.ToString(back); //
         }
     }
 }
