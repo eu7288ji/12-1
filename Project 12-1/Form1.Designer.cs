@@ -45,11 +45,12 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnOpt = new System.Windows.Forms.Button();
-            this.btnDot = new System.Windows.Forms.Button();
+            this.btnDecimal = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
             this.btnSubtract = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtResult
@@ -284,19 +285,19 @@
             this.btnOpt.UseVisualStyleBackColor = true;
             this.btnOpt.Click += new System.EventHandler(this.btnNegate_Click);
             // 
-            // btnDot
+            // btnDecimal
             // 
-            this.btnDot.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDot.ForeColor = System.Drawing.Color.Blue;
-            this.btnDot.Location = new System.Drawing.Point(117, 248);
-            this.btnDot.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDot.Name = "btnDot";
-            this.btnDot.Size = new System.Drawing.Size(44, 48);
-            this.btnDot.TabIndex = 19;
-            this.btnDot.Tag = ".";
-            this.btnDot.Text = ".";
-            this.btnDot.UseVisualStyleBackColor = true;
-            this.btnDot.Click += new System.EventHandler(this.buttonClick);
+            this.btnDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecimal.ForeColor = System.Drawing.Color.Blue;
+            this.btnDecimal.Location = new System.Drawing.Point(117, 248);
+            this.btnDecimal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDecimal.Name = "btnDecimal";
+            this.btnDecimal.Size = new System.Drawing.Size(44, 48);
+            this.btnDecimal.TabIndex = 19;
+            this.btnDecimal.Tag = ".";
+            this.btnDecimal.Text = ".";
+            this.btnDecimal.UseVisualStyleBackColor = true;
+            this.btnDecimal.Click += new System.EventHandler(this.buttonClick);
             // 
             // btnAdd
             // 
@@ -353,16 +354,33 @@
             this.btnSubtract.UseVisualStyleBackColor = true;
             this.btnSubtract.Click += new System.EventHandler(this.buttonClick);
             // 
+            // btnExit
+            // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.SlateGray;
+            this.btnExit.Location = new System.Drawing.Point(169, 304);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(94, 32);
+            this.btnExit.TabIndex = 22;
+            this.btnExit.Text = "E&xit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
+            this.AcceptButton = this.btnEquals;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(276, 310);
+            this.CancelButton = this.btnExit;
+            this.ClientSize = new System.Drawing.Size(276, 345);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSubtract);
             this.Controls.Add(this.btn6);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnDot);
+            this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnOpt);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn3);
@@ -407,11 +425,12 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnOpt;
-        private System.Windows.Forms.Button btnDot;
+        private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button btn6;
         private System.Windows.Forms.Button btnSubtract;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 

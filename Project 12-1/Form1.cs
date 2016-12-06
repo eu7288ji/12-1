@@ -19,23 +19,21 @@ namespace Project_12_1
 
         private void buttonClick(object sender, EventArgs e)
         {
-
-            if (sender == btn0) { Calculator.adder(btn0, txtResult);}
-            if (sender == btn1) { Calculator.adder(btn1, txtResult);}
-            if (sender == btn2) { Calculator.adder(btn2, txtResult);}
-            if (sender == btn3) { Calculator.adder(btn3, txtResult);}
-            if (sender == btn4) { Calculator.adder(btn4, txtResult);}
-            if (sender == btn5) { Calculator.adder(btn5, txtResult);}
-            if (sender == btn6) { Calculator.adder(btn6, txtResult);}
-            if (sender == btn7) { Calculator.adder(btn7, txtResult);}
-            if (sender == btn8) { Calculator.adder(btn8, txtResult);}
-            if (sender == btn9) { Calculator.adder(btn9, txtResult);}
-            if (sender == btnAdd) { Calculator.adder(btnAdd, txtResult);}
-            if (sender == btnSubtract) { Calculator.adder(btnSubtract, txtResult);}
-            if (sender == btnMultiply) { Calculator.adder(btnMultiply, txtResult); }
-            if (sender == btnDivide) { Calculator.adder(btnDivide, txtResult);}
-            if (sender == btnDot) { Calculator.adder(btnDot, txtResult); }
-
+            if (sender == btn0) { Calculator.Equate(btn0, txtResult);}
+            if (sender == btn1) { Calculator.Equate(btn1, txtResult);}
+            if (sender == btn2) { Calculator.Equate(btn2, txtResult);}
+            if (sender == btn3) { Calculator.Equate(btn3, txtResult);}
+            if (sender == btn4) { Calculator.Equate(btn4, txtResult);}
+            if (sender == btn5) { Calculator.Equate(btn5, txtResult);}
+            if (sender == btn6) { Calculator.Equate(btn6, txtResult);}
+            if (sender == btn7) { Calculator.Equate(btn7, txtResult);}
+            if (sender == btn8) { Calculator.Equate(btn8, txtResult);}
+            if (sender == btn9) { Calculator.Equate(btn9, txtResult);}
+            if (sender == btnAdd) { Calculator.Equate(btnAdd, txtResult);}
+            if (sender == btnSubtract) { Calculator.Equate(btnSubtract, txtResult);}
+            if (sender == btnMultiply) { Calculator.Equate(btnMultiply, txtResult); }
+            if (sender == btnDivide) { Calculator.Equate(btnDivide, txtResult);}
+            if (sender == btnDecimal) { Calculator.Equate(btnDecimal, txtResult); }
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -60,12 +58,17 @@ namespace Project_12_1
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtResult.Text = "";
+            txtResult.Text = "0";
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             Calculator.Back(txtResult);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
